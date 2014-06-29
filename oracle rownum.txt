@@ -1,2 +1,0 @@
-用rownum作为分页时 因为rownum是变化的 就这是为什么会有三层的原因，中间一层是把rownum伪列变为实例；
-如select count(1) from (select rownum rn ,t.* from (select *from T) t where rownum > .. ) where rn < ..;
